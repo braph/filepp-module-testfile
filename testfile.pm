@@ -42,7 +42,7 @@ sub TestFile
     my $filename = shift;
 
     for my $flag (split(//, $flags)) {
-       return if not eval "-$flag $filename";
+       return '' if not eval "-$flag $filename";
     }
 
     return 1;
