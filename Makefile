@@ -1,4 +1,6 @@
+MODULE = testfile.pm
+
 PREFIX = /usr
 
 install:
-	install -m 0644 testfile.pm $(PREFIX)/share/filepp/modules
+	install -m 0644 $(MODULE) $(PREFIX)/share/filepp/modules/$(MODULE)
